@@ -1,0 +1,41 @@
+.page-error404 {
+    display: flex; flex-direction: column; align-items: center;
+    color: $primary;
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.4;
+    &-title {
+        
+        font-weight: 700;
+        line-height: 1;
+        // @include media-min('sm') {
+        //     margin-top: 7rem;
+        //     font-size: 18rem;
+        // }
+        // @include media-max('sm') {
+        //     margin-top: 12rem;
+        //     font-size: 6rem;
+        // }
+    }
+    // &-secondary {
+    //     @include media-min('sm') {
+    //         margin-top: 3.25rem;
+    //         font-size: 2.25rem;
+    //     }
+    //     @include media-max('sm') {
+    //         margin-top: 1rem;
+    //         font-size: 1.125rem;
+    //     }
+    // }
+    // &-link {
+    //     text-decoration: underline;
+    //     @include media-min('sm') {
+    //         margin: 11.25rem 0;
+    //         font-size: 1.125rem;
+    //     }
+    //     @include media-max('sm') {
+    //         margin: 6rem 0;
+    //         font-size: .875rem;
+    //     }
+    // }
+}

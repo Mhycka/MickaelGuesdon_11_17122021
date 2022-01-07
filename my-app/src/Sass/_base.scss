@@ -1,0 +1,87 @@
+.header {
+    width: 100%;
+    max-width: 90rem;
+    margin: 0 auto;
+    // @include media-min('xl') {
+    //     padding: 2.5rem 6.25rem 3.125rem;
+    // }
+    // @include media-between('sm', 'xl') {
+    //     padding: 2.5rem 3rem 3.125rem;
+    // }
+    // @include media-max('sm') {
+    //     padding: 1.25rem 1.25rem 1.25rem;
+    // }
+    // NAVBAR
+    &-nav {
+        display: flex; justify-content: space-between; align-items: center;
+    }
+    // LOGO
+    // @include media-max('sm') {
+    //     &-logo img {
+    //         height: 2.375rem;
+    //     }
+    // }
+    // MENU
+    &-menu {
+        display: flex;
+        &-link {
+            color: $primary;
+            font-weight: 500;
+            a.active & {
+                text-decoration: underline;
+            }
+        }
+        // @include media-min('sm') {
+        //     gap: 3.625rem;
+        //     &-link {
+        //         font-size: 1.5rem;
+        //     }
+        // }
+        // @include media-max('sm') { 
+        //     gap: 1rem;
+        //     &-link {
+        //         font-size: 0.75rem;
+        //         text-transform: uppercase;
+        //     }
+        // }
+    }
+}
+
+.main {
+    flex-grow: 1;
+    display: flex; flex-direction: column;
+    width: 100%;
+    max-width: 90rem;
+    margin: 0 auto;
+    // @include media-min('xl') {
+    //     padding: 0 6.25rem;
+    // }
+    // @include media-between('sm', 'xl') {
+    //     padding: 0 3rem;
+    // }
+    // @include media-max('sm') {
+    //     padding: 0 1.25rem;
+    // }
+}
+
+.footer {
+    display: flex; justify-content: center;
+    background-color: $black;
+    &-container {
+        display: flex; flex-direction: column; align-items: center;
+        width: 100%;
+        max-width: 90rem;
+        margin: 0 auto;
+        padding: 4.125rem 3rem 1.8125rem;
+        gap: 2rem;
+        color: $white;
+        // @include media-min('sm') {
+        //     padding: 4.125rem 3rem 1.8125rem;
+        //     font-size: 1.5rem;
+        // }
+        // @include media-max('sm') {
+        //     padding: 4rem 1.5rem;
+        //     font-size: 0.75rem;
+        // }
+    }
+}

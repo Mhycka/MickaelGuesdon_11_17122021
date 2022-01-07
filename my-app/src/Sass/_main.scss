@@ -1,0 +1,13 @@
+@use 'sass:math';
+@import 'variables';
+// @import 'mixins/box-shadow';
+// @import 'mixins/media-queries';
+@import 'reset';
+@import 'components/accordion';
+@import 'components/slider';
+@import 'components/rateSystem';
+@import 'pages/errorPage';
+@import 'pages/aboutUs';
+@import 'pages/home';
+@import 'pages/HostsElement';
+@import 'base';

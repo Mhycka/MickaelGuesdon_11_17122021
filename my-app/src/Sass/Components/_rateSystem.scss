@@ -1,0 +1,21 @@
+.rating {
+    display: flex;
+    
+    &-star {
+        fill: currentColor;
+        color: #E3E3E3;
+        &.active {
+            fill: currentColor;
+            color: $primary;
+        }
+    }
+    // @include media-min('sm') {
+    //     gap: 0.625rem;
+    // }
+    // @include media-max('sm') {
+    //     gap: 0.3125rem;
+    //     & img {
+    //         height: 1rem;
+    //     }
+    // }
+}
