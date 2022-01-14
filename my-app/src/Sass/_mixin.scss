@@ -1,0 +1,11 @@
+@mixin small-screens {
+    @media (max-width: 895px) {
+      @content;
+    }
+  }
+  
+  @mixin accomodation-picture {
+    width: 100%;
+    height: 410px;
+    object-fit: cover;
+  }

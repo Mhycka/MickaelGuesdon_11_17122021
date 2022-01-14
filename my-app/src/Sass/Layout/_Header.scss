@@ -1,0 +1,44 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+  
+    .navigationMenu {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      align-items: center;
+      display: flex;
+      list-style: none;
+      gap: 25px;
+    }
+  
+    .navigationLink {
+      color: var(--color-primary);
+      text-decoration: none;
+      font-size: 1.5rem;
+  
+      &.active {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  @media screen and (max-width: 885px){
+    .header {
+      font-size: 12px;
+
+      img {
+        height: 40px;
+      }
+
+      .navigationMenu {
+        gap: 0;
+      }
+
+      .navigationLink {
+        font-size: 12px;
+        margin-left: 20px;
+      }
+    }
+  }
+  

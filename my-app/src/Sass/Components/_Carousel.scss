@@ -1,0 +1,117 @@
+@use "../mixin";
+
+@keyframes slideLeft {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideRight {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.carousel {
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+
+  .picBanner {
+    width: 100%;
+    height: 410px;
+    position: relative;
+    border-radius: var(--large-radius);
+    overflow: hidden;
+  }
+
+  .picture {
+    @include mixin.accomodation-picture;
+    position: absolute;
+
+    &.previous {
+      right: 100%;
+    }
+
+    &.next {
+      left: 100%;
+    }
+
+    &.slideLeft {
+      animation: slideLeft 0.5s forwards;
+    }
+    
+    &.slideRight {
+      animation: slideRight 0.5s forwards;
+    }
+  }
+
+  .button {
+    border: none;
+    border-radius: var(--small-radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65px;
+    height: 65px;
+    padding: 10px;
+    margin: 15px;
+    background-color: transparent;
+    transition: background-color 0.3s;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  .chevron {
+    width: 100%;
+    height: auto;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+  }
+
+  .displayedImageNumber {
+    flex: 1;
+    align-self: flex-end;
+    text-align: center;
+    color: white;
+  }
+}
+
+@media screen and (max-width: 885px) {
+  .carousel{
+    height: 255px;
+    border-radius: 10px;
+    overflow: hidden;
+
+    .picture{
+      height: 260px;
+    }
+
+    .button {
+      width: 35px;
+    }
+    
+    .chevronLeft {
+      left: 0;
+      margin-left: 5px;
+    }
+  }
+}

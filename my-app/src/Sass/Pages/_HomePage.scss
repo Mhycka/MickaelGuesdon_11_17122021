@@ -1,0 +1,32 @@
+@use "../mixin";
+
+.hostsContainer {
+  --host-card-width: 340px;
+  --host-card-height: 340px;
+
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, var(--host-card-width));
+  gap: 50px;
+  padding: 50px;
+  background-color: var(--color-foundation);
+  border-radius: var(--large-radius);
+  margin-top: 45px;
+  justify-content: center;
+
+  & > *:last-child {
+    margin-right: auto;
+  }
+}
+
+@include mixin.small-screens {
+  .hostsContainer {
+    --host-card-width: 100%;
+    --host-card-height: calc(0.80* calc(100vw - 100px));
+    gap: 20px;
+    background-color: #fff;
+    margin: 20px auto;
+    align-items: center;
+    padding: 0;
+  }
+}
