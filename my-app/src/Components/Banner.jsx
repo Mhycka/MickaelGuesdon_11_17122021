@@ -1,7 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-// import homePic from "../Media/homePic.jpg"
 
 class Banner extends React.Component {
   render() {
