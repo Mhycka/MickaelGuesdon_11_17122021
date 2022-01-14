@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.809278d8.css",
+    "main.js": "/static/js/main.c9874e5c.js",
+    "static/media/Background_2.png": "/static/media/Background_2.e8cc81c1db153c8dac8c.png",
+    "static/media/homePic.jpg": "/static/media/homePic.8dbc3e4ffb4f7b0b3bc8.jpg",
+    "static/media/LogoHeader.svg": "/static/media/LogoHeader.51bb8afbba95d7e6804ba646462663be.svg",
+    "static/media/LogoFooter.svg": "/static/media/LogoFooter.5c6266498c1e222efd2aee15cc01c478.svg",
+    "index.html": "/index.html",
+    "static/media/chevronRight.svg": "/static/media/chevronRight.88153a5d119c2744ffe34dca1ef843df.svg",
+    "static/media/chevronLeft.svg": "/static/media/chevronLeft.19918a1634b1441a25ae0b50e6b1f85b.svg",
+    "static/media/chevronTop.svg": "/static/media/chevronTop.78bd04c58743a7da8d3cf86f2cc23063.svg",
+    "static/media/Starempty.svg": "/static/media/Starempty.7e4ba6032d7d80ecc30aa389973cef95.svg",
+    "static/media/Starfull.svg": "/static/media/Starfull.6430150c126a3adf92c132c52c9c7428.svg",
+    "main.809278d8.css.map": "/static/css/main.809278d8.css.map",
+    "main.c9874e5c.js.map": "/static/js/main.c9874e5c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.809278d8.css",
+    "static/js/main.c9874e5c.js"
+  ]
+}
