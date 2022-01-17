@@ -42,11 +42,8 @@ class Carousel extends React.Component {
           className="picBanner"
           onAnimationEnd={() => {
             this.setState(state => ({ ...state, slide: null }));
-          }}
-        >
-          {/* img tags have keys to prevent the browser from fetching the same image between renders, 
-              and thus providing a clean user experience, without image flashes when using the carousel
-          */}
+            }}
+          >
           <img
             src={previousImage}
             key={images.length > 2 || slide !== "right" ? previousImage : ""}
@@ -76,11 +73,11 @@ class Carousel extends React.Component {
           />
         </div>
         <div className="overlay">
-          <button onClick={() => this.changeCurrentImage(1)} className="button">
+          <button onClick={() => this.changeCurrentImage(-1)} className="button">
             <img src={ChevronLeft} alt="chevron vers la gauche" className={Utilities('chevron', 'chevronLeft')}/>
           </button>
           <p className="displayedImageNumber">{this.state.currentImageIndex + 1}/{images.length}</p>
-          <button onClick={() => this.changeCurrentImage(-1)} className="button">
+          <button onClick={() => this.changeCurrentImage(1)} className="button">
             <img src={ChevronRight} alt="chevron vers la droite" className={Utilities('chevron', 'chevronRight')}/>
           </button>          
         </div>

@@ -16,7 +16,7 @@ class App extends React.Component {
           <Route index element={<HomePage />} />
           <Route path="about" element={<AboutUs />} />
           <Route path="Hosts/:id" element={<HostPage />} />
-          <Route path="Error" element={<ErrorPage />} />
+          <Route path="*" element={<ErrorPage />} />
         </Route>
       </Routes>
     );
