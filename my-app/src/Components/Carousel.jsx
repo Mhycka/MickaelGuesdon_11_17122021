@@ -9,6 +9,7 @@ import ChevronLeft from "../Media/chevronLeft.svg";
 
 
 class Carousel extends React.Component {
+  
   constructor(props) {
     super(props);
 
@@ -18,6 +19,7 @@ class Carousel extends React.Component {
     };
   }
 
+  
   changeCurrentImage = step => {
     this.setState(state => {
       const imagesLength = this.props.images.length;
@@ -35,6 +37,8 @@ class Carousel extends React.Component {
     const currentImage = images[currentImageIndex];
     const previousImage = images[CarouselUtils(currentImageIndex - 1, images.length)];
     const nextImage = images[CarouselUtils(currentImageIndex + 1, images.length)];
+
+
 
     return (
       <div className="carousel">
